@@ -1,8 +1,7 @@
 {
-      "buildCommand": "npm run build && npx esbuild api/auth/*.ts api/companies/*.ts api/certificates/*.ts api/documents/*.ts api/sync/*.ts api/webhooks/*.ts --bundle --platform=node --format=esm --outdir=api --allow-overwrite",
-      "outputDirectory": "dist",
-      "framework": "vite",
-      "rewrites": [
-              { "source": "/((?!api/).*)", "destination": "/index.html" }
-      ]
+        "outputDirectory": "dist",
+        "framework": "vite",
+        "rewrites": [
+                  { "source": "/((?!api/).*)", "destination": "/index.html" }
+        ]
 }
